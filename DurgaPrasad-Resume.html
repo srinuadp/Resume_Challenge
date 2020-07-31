@@ -23,6 +23,12 @@
         <h2>Durga Prasad Ambati</h2>
         <p>Durgaprasad4596@gmail.com</p>
         <p>Mobile:(+91)9177014206</p>
+        <p>Visitor Count:<span id="id01"></span></p>
+        <script>
+        let response = fetch('https://jtsjrke0i5.execute-api.us-east-1.amazonaws.com/default/ResumeViewCounter')
+                      .then(res => res.json())
+                      .then(data => document.getElementById('id01').innerHTML=data.ViewCount);	
+        </script> 
         <p>&nbsp;</p>
       </div>
       <!-- the horizontal line -->
