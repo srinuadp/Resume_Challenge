@@ -25,9 +25,9 @@
         <p>Mobile:(+91)9177014206</p>
         <p>Visitor Count:<span id="id01"></span></p>
         <script>
-        let response = fetch('https://jtsjrke0i5.execute-api.us-east-1.amazonaws.com/default/ResumeViewCounter')
+        let response = fetch('https://pw7u6murg8.execute-api.us-east-1.amazonaws.com/Prod/hello/')
                       .then(res => res.json())
-                      .then(data => document.getElementById('id01').innerHTML=data.ViewCount);	
+                      .then(data => document.getElementById('id01').innerHTML=data.numberofVisitors);	
         </script> 
         <p>&nbsp;</p>
       </div>
